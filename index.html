@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALENDÁRIO 2025 - 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonte Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <!-- CONTEÚDO SUPERIOR -->
+    <section id="top-content">
+      <h1>MEU CALENDÁRIO</h1>
+      <p>Aqui você pode visualizar suas anotações entre JUNHO/2025 e DEZEMBRO/2026.</p>
+    </section>
+
+    <!-- CALENDÁRIO -->
+    <section id="calendar-section">
+      <div class="calendar-container">
+        <header>
+          <button id="prev-month">◀</button>
+          <h2 id="month-year"></h2>
+          <button id="next-month">▶</button>
+        </header>
+        
+        <div class="weekdays">
+          <div>DOM</div>
+          <div>SEG</div>
+          <div>TER</div>
+          <div>QUA</div>
+          <div>QUI</div>
+          <div>SEX</div>
+          <div>SAB</div>
+        </div>
+        
+        <div id="days" class="days-grid"></div>
+      </div>
+    </section>
+
+    <!-- CONTEÚDO INFERIOR -->
+    <section id="bottom-content">
+      <h2>INFORMAÇÕES EXTRAS</h2>
+      <p>Aqui você pode colocar avisos, links úteis, imagens ou outros textos complementares.</p>
+    </section>
+
+  </div>
+
+  <!-- Modal de anotações -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h3 id="modal-date"></h3>
+      <p id="modal-text"></p>
+      <img id="modal-img" src="" alt="" style="display:none;">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
